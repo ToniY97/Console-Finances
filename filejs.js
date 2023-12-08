@@ -135,7 +135,9 @@ var greatestDecrease = { amount: 0 };
 
 // Code to access the arrays in the array
 for (let i = 0; i < finances.length; i++) {
-    var date = finances[i];
-    var netLoss = finances[i];
-    console.log(netLoss)
+    var date = finances[i][0];
+    var netLoss = finances[i][1];
+    
+    //Store each iteration for netloos in var
+    totalLoss += netLoss
 }
