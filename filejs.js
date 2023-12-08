@@ -129,7 +129,7 @@ var finances = [
 
 var totalMonths = finances.length
 var totalLoss = 0
-var totalChange = 0;
+var avgChange = 0;
 var greatestIncrease = { amount: 0 };
 var greatestDecrease = { amount: 0 };
 
@@ -162,3 +162,11 @@ for (let i = 0; i < finances.length; i++) {
 // Code to calculate the average increase/decrease
 avgChange /= totalMonths
 
+//Display analysis
+console.log("Financial Analysis");
+console.log("------------------");
+console.log("Total Months:", totalMonths);
+console.log("Total; $" + totalLoss.toLocaleString());
+console.log("Average Change; $" + avgChange.toFixed(2));
+console.log("Greatest Increase in Profits/Losses:" , greatestIncrease.amount.toLocaleString()+ ")");
+console.log("Greatest Decreased in Profits/Losses", greatestDecrease.date, "($" + greatestDecrease.amount.toLocaleString() + ")");
