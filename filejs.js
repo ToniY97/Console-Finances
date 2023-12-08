@@ -134,5 +134,5 @@ console.log("------------------");
 console.log("Total Months:", totalMonths);
 console.log("Total; $" + totalLoss.toLocaleString());
 console.log("Average Change; $" + avgChange.toFixed(2));
-console.log("Greatest Increase in Profits/Losses:" , greatestIncrease.amount.toLocaleString()+ ")");
+console.log("Greatest Increase in Profits/Losses:" ,greatestIncrease.date, greatestIncrease.amount.toLocaleString()+ ")");
 console.log("Greatest Decreased in Profits/Losses", greatestDecrease.date, "($" + greatestDecrease.amount.toLocaleString() + ")");
