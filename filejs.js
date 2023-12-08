@@ -143,6 +143,8 @@ for (let i = 0; i < finances.length; i++) {
 
     // Code that calculates the changes in profit/loss for each month
     if (i >0) {
-        const 
+        var change = totalLoss + finances[i - 1][1]
+        totalChange += change
+        
     }
 }
