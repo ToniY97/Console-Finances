@@ -140,4 +140,9 @@ for (let i = 0; i < finances.length; i++) {
     
     //Store each iteration for netloos in var
     totalLoss += netLoss
+
+    // Code that calculates the changes in profit/loss for each month
+    if (i >0) {
+        const 
+    }
 }
