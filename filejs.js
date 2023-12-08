@@ -146,5 +146,16 @@ for (let i = 0; i < finances.length; i++) {
         var change = totalLoss + finances[i - 1][1]
         totalChange += change
         
+        // Code to calculate increase/decrease
+        if (change > greatestIncrease.amount) {
+            greatestIncrease.amount = change;
+            greatestIncrease.date = date;
+        }
+          if (change < greatestDecrease.amount) {
+            greatestDecrease.amount = change;
+            greatestDecrease.date = date;
+            
+          }
+        
     }
 }
