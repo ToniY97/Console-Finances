@@ -39,3 +39,10 @@
 // variables declared inside the loop:
 // current data point
 // previous data point
+
+--Snapshot
+
+![snapshot](./Live%20webpage.png)
+
+//Link to live webpage
+![link](https://toniy97.github.io/Console-Finances/)
