@@ -132,3 +132,10 @@ var totalLoss = 0
 var totalChange = 0;
 var greatestIncrease = { amount: 0 };
 var greatestDecrease = { amount: 0 };
+
+// Code to access the arrays in the array
+for (let i = 0; i < finances.length; i++) {
+    var date = finances[i];
+    var netLoss = finances[i];
+    console.log(netLoss)
+}
