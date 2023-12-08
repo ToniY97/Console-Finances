@@ -144,7 +144,7 @@ for (let i = 0; i < finances.length; i++) {
     // Code that calculates the changes in profit/loss for each month
     if (i >0) {
         var change = totalLoss + finances[i - 1][1]
-        totalChange += change
+        avgChange += change
         
         // Code to calculate increase/decrease
         if (change > greatestIncrease.amount) {
@@ -159,3 +159,6 @@ for (let i = 0; i < finances.length; i++) {
         
     }
 }
+// Code to calculate the average increase/decrease
+avgChange /= totalMonths
+
