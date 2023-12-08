@@ -127,33 +127,37 @@ var finances = [
     ['Feb-2017', 671099],
   ];
 
-var totalMonths = finances.length
-var totalLoss = 0
+var totalMonths = finances.length;
+var totalLoss = 0;
 var avgChange = 0;
-var greatestIncrease = { amount: 0 };
-var greatestDecrease = { amount: 0 };
+var greatestIncrease = { date: "", amount: 0 };
+var greatestDecrease = { date: "", amount: 0 };
 
 // Code to access the arrays in the array
 for (let i = 0; i < finances.length; i++) {
-    var date = finances[i][0];
+    var currentDate = finances[i][0];
     var netLoss = finances[i][1];
     
     //Store each iteration for netloos in var
-    totalLoss += netLoss
+    totalLoss += netLoss;
 
     // Code that calculates the changes in profit/loss for each month
     if (i >0) {
-        var change = totalLoss + finances[i - 1][1]
-        avgChange += change
+        //Getting date and profit loss for previous record
+        var previousDate = finances[i - 1][0];
+            previousLoss = finances[i - 1][1];
+        
+        var change = netLoss - previousLoss;
+        avgChange += change;
         
         // Code to calculate increase/decrease
         if (change > greatestIncrease.amount) {
             greatestIncrease.amount = change;
-            greatestIncrease.date = date;
+            greatestIncrease.date = currentDate;
         }
           if (change < greatestDecrease.amount) {
             greatestDecrease.amount = change;
-            greatestDecrease.date = date;
+            greatestDecrease.date = currentDate;
             
           }
         
